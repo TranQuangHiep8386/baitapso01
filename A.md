@@ -1,0 +1,8 @@
+
+Phần A: Đăng ký tên miền và cấu hình Cloudflare
+B1.Truy cập vào trang web của nhà cung cấp tên miền (ví dụ: Mắt Bão, Tenten, iNet...) Đăng kí tên miền thành công
+<img width="1909" height="1034" alt="Screenshot 2026-04-12 174128" src="https://github.com/user-attachments/assets/be68fe89-a889-4180-9cc5-bb13a3516f7f" />
+Bước 2: Tạo tài khoản Cloudflare Truy cập dash.cloudflare.com/sign-up Nhập Email và Mật khẩu để tạo tài khoản miễn phí. Vào email của bạn để bấm link xác thực tài khoản từ Cloudflare gửi tới.+Bước 3: Thêm Domain vào Cloudflare Đăng nhập vào Cloudflare, tại trang chủ (Dashboard), bấm vào nút "Add a Site" hoặc "Add a Domain". Nhập tên miền bạn vừa đăng ký thành công (vd: ten-cua-ban.id.vn) và bấm Continue. Ở màn hình chọn gói cước (Plan), hãy cuộn xuống dưới cùng và chọn gói Free ($0), sau đó bấm Continue. Cloudflare sẽ quét các bản ghi DNS hiện tại (cứ để mặc định và bấm Continue).
+<img width="2554" height="1360" alt="Screenshot 2026-04-12 180132" src="https://github.com/user-attachments/assets/f2d2f59d-1a49-45c5-9b34-f390569b195a" />
+Bước 4: Trỏ Nameserver từ Mắt Bão về Cloudflare Đăng nhập vào trang quản lý dịch vụ (id.matbao.net) của Mắt Bão. Tìm đến mục Quản lý tên miền -> Chọn tên miền bạn vừa đăng ký. Tìm phần Cập nhật Nameserver (hoặc Đổi máy chủ DNS). Xóa các Nameserver mặc định của Mắt Bão và dán 2 dòng Nameserver của Cloudflare bạn vừa copy ở Bước 3 vào. Lưu lại. Quá trình cập nhật DNS có thể mất từ 15 phút đến vài tiếng.
+<img width="1906" height="1069" alt="Screenshot 2026-04-12 180734" src="https://github.com/user-attachments/assets/dd6d7e9e-08fa-442d-b3d1-43029041b519" />
